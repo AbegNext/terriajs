@@ -1,5 +1,10 @@
+
 Change Log
 ==========
+
+### 1.0.46
+
+* Fixed an incorrect require (`URIjs` instead of `urijs`).
 
 ### 1.0.45
 
@@ -25,6 +30,13 @@ Change Log
   * Currently top level members do not show controls.
 * Added `@menu-bar-right-offset` LESS parameter to control the right position of the menu bar.
 * Added Proj4 projections to the location bar. Clicking on the bar switches between lats/longs and projected coordinates.
+* The `LocationBarViewModel` now shows the latitude and longitude coordinates of the mouse cursor in 2D as well as 3D.
+* The `LocationBarViewModel` no longer displays a misleading elevation of 0m when in "3D Smooth" mode.
+* Added `@menu-bar-right-offset` LESS parameter to control the right position of the menu bar.
+* Added `forceProxy` flag to all catalog members to indicate that an individual item should use the proxy regardless of whether the domain is in the list of domains to proxy.
+* Allow a single layer of an ArcGIS MapServer to be added through the "Add Data" interface.
+* Added `WfsFeaturesCatalogGroup`.  This group is populated with a catalog item for each feature queried from a WFS server.
+* The Feature Info panel now shows all selected features in an accordion control.  Previously it only showed the first one.
 
 ### 1.0.44
 
@@ -56,7 +68,6 @@ Change Log
 ### 1.0.41
 
 * Improvements to `AbsIttCatalogItem` caching from the Tools menu.
-* Added `forceProxy` flag to all catalog members to indicate that an individual item should use the proxy regardless of whether the domain is in the list of domains to proxy.
 
 ### 1.0.40
 
